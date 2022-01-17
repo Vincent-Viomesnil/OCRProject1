@@ -1,0 +1,164 @@
+ /* Définition des polices personnalisées */
+
+
+
+ @font-face
+ {
+    font-family: "AvenirNext";
+    font-style: normal;
+    font-weight: normal;
+    src: url("police/AvenirNextLTPro-Regular.otf") format("otf");
+ }
+
+@font-face
+{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    src: url("police/Montserrat-Regular.ttf") format("ttf");
+}
+
+
+
+ /* Eléments principaux de la page */
+
+
+h1
+
+{
+font-family: "Montserrat","Comic Sans MS";
+color: white;
+}
+
+h2
+{
+font-family: "Montserrat","Comic Sans MS";
+color: rgb(0, 0, 89);
+}
+
+
+body
+{
+    font-family: "AvenirNext";
+    color: rgb(0, 0, 89);
+}
+
+
+
+
+ /* Header */
+header
+
+{
+    display: flex;
+    background-color: rgb(116, 81, 235);
+    justify-content: space-around;
+    color: white;
+    font-size: large;
+    padding-top: 100px;
+}
+
+
+strong
+{
+    background-color: rgb(0, 237, 162);
+}
+
+#presentation
+{
+    width: 25%;
+}
+
+
+
+ /* Section */
+
+section
+
+{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+#slash
+{
+    font-size: 12em;
+    color: rgb(0, 0, 89);
+    font-weight: 900;
+    width: 50%;
+    margin-left: 100px;
+}
+
+#competences
+{
+    width : 50%;
+}
+
+
+
+ /* Footer */
+
+footer
+{
+    background-color: rgb(0, 54, 104);
+    padding-left: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    font-size: x-large;
+}
+
+span
+{
+    background-color: rgb(0, 237, 162);
+}
+
+
+footer img
+{
+   margin-right: 40px;
+   width: 80px;
+   height: 80px;
+   padding-top: 75px;
+}
+
+a:link
+{
+    color: white;
+}
+
+a:hover
+{
+    color: rgb(0, 0, 89);
+}
+
+
+ /* Pour écran plus petit (Rendre le site responsive) */
+
+
+@media screen and (max-width: 1024px)
+
+{
+
+  header
+   {
+    flex-direction: column;
+   }
+
+   #presentation
+   {
+    width: 100%;
+   }
+   
+
+   section
+   {
+    flex-direction: column;
+    width: 100%;
+   }
+
+   #slash
+   {
+    display: none;
+   }
+}
